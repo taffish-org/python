@@ -1,4 +1,4 @@
-FROM docker.io/library/python:3.12.9
+FROM docker.io/library/python:3.11.11
 
 LABEL maintainer="taffish@163.com"
 
