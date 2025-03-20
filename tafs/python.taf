@@ -5,5 +5,5 @@ ARGS
     <main>
         python ::file:: ::in::
 RUN
-    <container:taf-python-v3.10.16:ghcr.io/taffish-org/python:3.10.16>
+    <container:taf-python-v3.9.21:ghcr.io/taffish-org/python:3.9.21>
         ::*MAIN*::
