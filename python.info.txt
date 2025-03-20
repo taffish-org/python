@@ -1,9 +1,9 @@
-# <python:3.11.11 | KaiyuanHan | 2025-03-20>
+# <python:3.10.16 | KaiyuanHan | 2025-03-20>
 ARGS
     <else>
         cat ::*LOAD-DIR*::../python.info.txt
     <main>
         python ::file:: ::in::
 RUN
-    <container:taf-python-v3.11.11:ghcr.io/taffish-org/python:3.11.11>
+    <container:taf-python-v3.10.16:ghcr.io/taffish-org/python:3.10.16>
         ::*MAIN*::
