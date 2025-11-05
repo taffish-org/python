@@ -1,0 +1,10 @@
+#!/usr/local/bin/taffish
+
+echo "[Change: ::@o/old=$$grep '^FROM' dockerfiles/Dockerfile | cut -d':' -f 2$$:: ===> ::@n/new=@*APP-ARGS*::]"
+
+sed -i '' 's/::o::/::n::/g' ::*LOAD-DIR*::dockerfiles/Dockerfile
+sed -i '' 's/::o::/::n::/g' ::*LOAD-DIR*::python.info.lisp
+sed -i '' 's/::o::/::n::/g' ::*LOAD-DIR*::python.info.txt
+sed -i '' 's/::o::/::n::/g' ::*LOAD-DIR*::tafs/python.taf
+
+echo '[DONE]'
